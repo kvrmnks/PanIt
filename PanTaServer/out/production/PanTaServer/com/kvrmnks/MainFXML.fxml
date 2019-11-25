@@ -16,12 +16,10 @@
          <content>
             <BorderPane prefHeight="200.0" prefWidth="200.0">
                <center>
-                  <TableView prefHeight="369.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                  <TableView fx:id="tableView" prefHeight="369.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="用户名" />
-                        <TableColumn prefWidth="75.0" text="用户密码" />
-                        <TableColumn prefWidth="97.6666259765625" text="用户使用空间" />
-                        <TableColumn prefWidth="96.33331298828125" text="用户最大空间" />
+                        <TableColumn fx:id="nameTableColumn" prefWidth="75.0" text="用户名" />
+                        <TableColumn fx:id="passwordTableColumn" prefWidth="75.0" text="用户密码" />
                      </columns>
                   </TableView>
                </center>

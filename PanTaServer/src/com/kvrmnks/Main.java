@@ -76,6 +76,7 @@ public class Main extends Application {
         try{
             MainController mc = (MainController) replaceSceneContentForTab("MainFXML.fxml");
             mc.setApp(this);
+         //   mc.init();
             Thread t = new Thread(new Server(ss,mc));
             t.start();
 
