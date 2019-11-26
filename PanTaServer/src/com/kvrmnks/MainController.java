@@ -29,6 +29,7 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         nameTableColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        //nameTableColumn.setCellFactory();
         passwordTableColumn.setCellValueFactory(new PropertyValueFactory<>("password"));
         tableView.setItems(data);
     }

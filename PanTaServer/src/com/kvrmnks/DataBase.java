@@ -43,13 +43,13 @@ public class DataBase implements Serializable {
         user.add(a);
     }
 
-    boolean hasSameName(User a){
-		for(User u : user){
-			if(u.getName().equals(a.getName()))
-				return true;
-		}
-		return false;
-	}
+    boolean hasSameName(User a) {
+        for (User u : user) {
+            if (u.getName().equals(a.getName()))
+                return true;
+        }
+        return false;
+    }
 
     public boolean has(User a) {
         for (int j = 0; j < user.size(); j++) {

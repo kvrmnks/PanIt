@@ -13,8 +13,9 @@ public class Connect implements Runnable {
     private MainController mainController;
     private String diskLocation;
     private User user;
+
     public Connect(Socket socket, DataInputStream socketIn, DataOutputStream socketOut
-            , MainController mainController,User user,String diskLocation) {
+            , MainController mainController, User user, String diskLocation) {
         this.socket = socket;
         this.socketIn = socketIn;
         this.socketOut = socketOut;
@@ -57,6 +58,7 @@ public class Connect implements Runnable {
         Thread t = new Thread(new Uploader(socket, socketIn, socketOut, fileto, file));
         t.start();
     }
+
     //暂行
     private void getStructure() {
 
@@ -69,18 +71,18 @@ public class Connect implements Runnable {
         //MyDate md = new MyDate();
         try {
             socketOut.writeInt(n);
-            for(File f : files){
-                if(f.isDirectory()){
-                    new MyFile(f.getName(),f.length(),MyFile.TYPEFILEDERECTORY
-                            ,MyDate.convert(""+f.lastModified())
+            for (File f : files) {
+                if (f.isDirectory()) {
+                    new MyFile(f.getName(), f.length(), MyFile.TYPEFILEDERECTORY
+                            , MyDate.convert("" + f.lastModified())
                     ).writeByStream(socketOut);
                 }
             }
 
-            for(File f : files){
-                if(f.isFile()){
-                    new MyFile(f.getName(),f.length(), MyFile.TYPEFILE
-                            ,MyDate.convert(""+f.lastModified())
+            for (File f : files) {
+                if (f.isFile()) {
+                    new MyFile(f.getName(), f.length(), MyFile.TYPEFILE
+                            , MyDate.convert("" + f.lastModified())
                     ).writeByStream(socketOut);
                 }
             }
@@ -107,9 +109,9 @@ public class Connect implements Runnable {
         String[] command = socketIn.readUTF().split("\\$");
         switch (command[0]) {
             case "GetStructure":
-                if(command.length>1){
+                if (command.length > 1) {
                     getStructure(command[1]);
-                }else{
+                } else {
                     ;
                 }
                 break;
