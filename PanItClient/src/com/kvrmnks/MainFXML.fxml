@@ -7,25 +7,23 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.BorderPane?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kvrmnks.MainController">
-   <top>
-      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <items>
-          <Button mnemonicParsing="false" text="后退" />
-            <TextField />
-        </items>
-      </ToolBar>
-   </top>
-   <center>
-      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <columns>
-          <TableColumn prefWidth="69.0" text="文件类型" />
-          <TableColumn prefWidth="81.0" text="文件名" />
-            <TableColumn prefWidth="75.0" text="文件大小" />
-            <TableColumn prefWidth="87.66668701171875" text="文件创建时间" />
-            <TableColumn prefWidth="88.3333740234375" text="文件修改时间" />
-        </columns>
-      </TableView>
-   </center>
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button mnemonicParsing="false" text="后退" />
+                <TextField />
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="fileTypeTableColumn" prefWidth="69.0" text="文件类型" />
+                <TableColumn fx:id="fileNameTableColumn" prefWidth="81.0" text="文件名" />
+                <TableColumn fx:id="fileSizeTableColumn" prefWidth="75.0" text="文件大小" />
+                <TableColumn fx:id="fileModifyTimeTableColumn" prefWidth="88.3333740234375" text="文件修改时间" />
+            </columns>
+        </TableView>
+    </center>
 </BorderPane>

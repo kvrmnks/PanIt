@@ -11,19 +11,23 @@ public class Uploader implements Runnable {
     private DataInputStream in;
     private Socket realSocket;
     private int port;
-    private String fileto,file;
-    private Uploader(){}
-    public Uploader(Socket socket,DataInputStream in,DataOutputStream out,String fileto,String file){
+    private String fileto, file;
+
+    private Uploader() {
+    }
+
+    public Uploader(Socket socket, DataInputStream in, DataOutputStream out, String fileto, String file) {
         this.socket = socket;
         this.in = in;
         this.out = out;
         this.file = file;
         this.fileto = fileto;
     }
-    private int findEmptyPort(){
-        for(int i=1000;true;i++){
+
+    private int findEmptyPort() {
+        for (int i = 1000; true; i++) {
             try {
-                Socket s = new Socket("localhost",i);
+                Socket s = new Socket("localhost", i);
                 s.close();
             } catch (UnknownHostException e) {
                 return i;
@@ -33,7 +37,8 @@ public class Uploader implements Runnable {
             }
         }
     }
-    private void setConnect(){
+
+    private void setConnect() {
         port = findEmptyPort();
         try {
             ServerSocket serverSocket = new ServerSocket(port);
@@ -45,19 +50,21 @@ public class Uploader implements Runnable {
             e.printStackTrace();
         }
     }
+
     private void mainWork() throws IOException {
-        File f = new File(fileto+"/"+file);
+        File f = new File(fileto + "/" + file);
         DataOutputStream fileOut = new DataOutputStream(new FileOutputStream(f));
         long length = in.readLong();
         long current = 0;
         byte[] buffer = new byte[1024];
-        while(current < length){
+        while (current < length) {
             int w = in.read(buffer);
-            fileOut.write(buffer,0,w);
+            fileOut.write(buffer, 0, w);
             current += w;
         }
         fileOut.close();
     }
+
     @Override
     public void run() {
         setConnect();

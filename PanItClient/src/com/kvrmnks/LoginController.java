@@ -19,20 +19,23 @@ import java.util.ResourceBundle;
 public class LoginController implements Initializable {
     private Main application;
     @FXML
-    public Button closeButton,loginButton;
+    public Button closeButton, loginButton;
     public TextField userNameTextField;
     public PasswordField passwordTextField;
     private Socket socket;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
     @FXML
-    public void close(ActionEvent actionEvent){
+    public void close(ActionEvent actionEvent) {
         Platform.exit();
     }
+
     @FXML
-    public void login(ActionEvent actionEvent){
+    public void login(ActionEvent actionEvent) {
         try {
             DataInputStream in = new DataInputStream(socket.getInputStream());
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
@@ -43,9 +46,9 @@ public class LoginController implements Initializable {
             out.writeUTF(stringBuilder.toString());
             boolean flag = false;
             flag = in.readBoolean();
-            if(flag){
-                application.setMainForm(socket,in,out);
-            }else{
+            if (flag) {
+                application.setMainForm(socket, in, out);
+            } else {
                 MyAlert.showInformationAlert("用户名或密码错误");
             }
         } catch (IOException e) {
@@ -53,10 +56,12 @@ public class LoginController implements Initializable {
             e.printStackTrace();
         }
     }
-    public void setSocket(Socket s){
+
+    public void setSocket(Socket s) {
         socket = s;
     }
-    public void setApp(Main app){
+
+    public void setApp(Main app) {
         application = app;
     }
 }

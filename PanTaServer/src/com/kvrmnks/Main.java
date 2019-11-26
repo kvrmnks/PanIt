@@ -17,40 +17,43 @@ import java.net.ServerSocket;
 
 public class Main extends Application {
     private Stage stage;
-    private Initializable replaceSceneContent(String fxml) throws Exception{
+
+    private Initializable replaceSceneContent(String fxml) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         InputStream in = Main.class.getResourceAsStream(fxml);
         loader.setBuilderFactory(new JavaFXBuilderFactory());
         loader.setLocation(Main.class.getResource(fxml));
         GridPane page;
-        try{
+        try {
             page = (GridPane) loader.load(in);
-        }finally {
+        } finally {
             in.close();
         }
         Scene scene = new Scene(page);
         stage.setScene(scene);
         stage.sizeToScene();
-        return (Initializable)loader.getController();
+        return (Initializable) loader.getController();
     }
-    private Initializable replaceSceneContentForTab(String fxml) throws Exception{
+
+    private Initializable replaceSceneContentForTab(String fxml) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         InputStream in = Main.class.getResourceAsStream(fxml);
         loader.setBuilderFactory(new JavaFXBuilderFactory());
         loader.setLocation(Main.class.getResource(fxml));
         TabPane page;
-        try{
+        try {
             page = (TabPane) loader.load(in);
-        }finally {
+        } finally {
             in.close();
         }
         Scene scene = new Scene(page);
         stage.setScene(scene);
         stage.sizeToScene();
-        return (Initializable)loader.getController();
+        return (Initializable) loader.getController();
     }
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         stage = primaryStage;
         stage.setTitle("PanTa");
         setBuilderForm();
@@ -67,20 +70,23 @@ public class Main extends Application {
         try {
             BuilderController bc = (BuilderController) replaceSceneContent("BuilderFXML.fxml");
             bc.setApp(this);
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    void setMainForm(ServerSocket ss){
-        try{
+    void setMainForm(ServerSocket ss) {
+        try {
             MainController mc = (MainController) replaceSceneContentForTab("MainFXML.fxml");
+            UserManager um = new UserManager();
             mc.setApp(this);
-         //   mc.init();
-            Thread t = new Thread(new Server(ss,mc));
+            mc.setUserManager(um);
+            Server s = new Server(ss, mc);
+            s.setUserManager(um);
+            Thread t = new Thread(s);
             t.start();
 
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

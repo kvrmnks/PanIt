@@ -27,10 +27,10 @@
                   <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <items>
                         <Label text="用户名" />
-                        <TextField prefHeight="23.0" prefWidth="133.0" />
+                        <TextField fx:id="nameTextField" prefHeight="23.0" prefWidth="133.0" />
                         <Label text="用户密码" />
-                        <TextField />
-                      <Button mnemonicParsing="false" text="添加" />
+                        <TextField fx:id="passwordTextField" />
+                      <Button fx:id="addButton" mnemonicParsing="false" onAction="#add" text="添加" />
                     </items>
                   </ToolBar>
                </bottom>

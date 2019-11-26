@@ -2,16 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/kvrmnks/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PanItClient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/ViewMyFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PanItClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/ConnectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/ConnectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/ConnectFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/ConnectFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/LoginFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/LoginFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/MainFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/MainFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/MyAlert.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/out/production/PanItClient/com/kvrmnks/MyAlert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/ConnectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/ConnectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/ConnectFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/ConnectFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/LoginFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/LoginFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MainFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MainFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MyAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PanItClient/src/com/kvrmnks/MyAlert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/BuilderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/BuilderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/BuilderFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/BuilderFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Connect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Downloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Downloader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/MainFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/MainFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/MyAlert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/MyAlert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Uploader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/Uploader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/ViewUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PanTaServer/com/kvrmnks/ViewUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/BuilderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/BuilderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/BuilderFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/BuilderFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/Downloader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/MainFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/MainFXML.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/MyAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/MyAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/Uploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/Uploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../暂行20191124开发周期.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../暂行20191124开发周期.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kvrmnks/ViewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kvrmnks/ViewUser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +144,7 @@
       <recent name="com.kvrmnks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PanIt\PanTaServer\src\com\kvrmnks" />
       <recent name="E:\PanIt\PanTaServer\src" />
       <recent name="E:\PanTaServer\src\com\kvrmnks" />
     </key>
@@ -211,7 +253,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -225,6 +269,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="info" language="JAVA" />
+        <watch expression="command" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

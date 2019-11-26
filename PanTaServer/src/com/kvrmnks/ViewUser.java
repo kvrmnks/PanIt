@@ -5,7 +5,8 @@ import javafx.beans.property.SimpleStringProperty;
 public final class ViewUser {
     private final SimpleStringProperty name;
     private final SimpleStringProperty password;
-    public ViewUser(User a){
+
+    public ViewUser(User a) {
         name = new SimpleStringProperty(a.getName());
         password = new SimpleStringProperty(a.getPassword());
     }
