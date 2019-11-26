@@ -21,19 +21,19 @@
     <center>
         <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn fx:id="fileTypeTableColumn" prefWidth="69.0" text="文件类型" />
-                <TableColumn fx:id="fileNameTableColumn" prefWidth="81.0" text="文件名" />
-                <TableColumn fx:id="fileSizeTableColumn" prefWidth="75.0" text="文件大小" />
-                <TableColumn fx:id="fileModifyTimeTableColumn" prefWidth="88.3333740234375" text="文件修改时间" />
-            </columns>
-         <contextMenu>
-            <ContextMenu fx:id="contextMenu">
-              <items>
-                <MenuItem mnemonicParsing="false" text="打开" />
-                  <MenuItem mnemonicParsing="false" text="下载" />
-                  <MenuItem mnemonicParsing="false" text="重命名" />
-                  <MenuItem mnemonicParsing="false" text="删除" />
-                  <MenuItem mnemonicParsing="false" text="绑定" />
+                  <TableColumn fx:id="fileTypeTableColumn" prefWidth="69.0" text="文件类型" />
+                  <TableColumn fx:id="fileNameTableColumn" prefWidth="81.0" text="文件名" />
+                  <TableColumn fx:id="fileSizeTableColumn" prefWidth="75.0" text="文件大小" />
+                  <TableColumn fx:id="fileModifyTimeTableColumn" prefWidth="88.3333740234375" text="文件修改时间" />
+              </columns>
+            <contextMenu>
+                <ContextMenu fx:id="contextMenu">
+                    <items>
+                        <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="打开" />
+                        <MenuItem fx:id="downLoadMenuItem" mnemonicParsing="false" text="下载" />
+                        <MenuItem fx:id="renameMenuItem" mnemonicParsing="false" text="重命名" />
+                  <MenuItem fx:id="removeMenuItem" mnemonicParsing="false" text="删除" />
+                  <MenuItem fx:id="bindMenuItem" mnemonicParsing="false" text="绑定" />
               </items>
             </ContextMenu>
          </contextMenu>

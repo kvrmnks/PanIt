@@ -20,7 +20,7 @@
     </top>
     <center>
         <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-            <columns>i
+            <columns>
                   <TableColumn fx:id="fileTypeTableColumn" prefWidth="69.0" text="文件类型" />
                   <TableColumn fx:id="fileNameTableColumn" prefWidth="81.0" text="文件名" />
                   <TableColumn fx:id="fileSizeTableColumn" prefWidth="75.0" text="文件大小" />
