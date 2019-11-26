@@ -29,7 +29,7 @@
             <contextMenu>
                 <ContextMenu fx:id="contextMenu">
                     <items>
-                        <MenuItem fx:id="openMenuItem" mnemonicParsing="false" text="打开" />
+                        <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#open" text="打开" />
                         <MenuItem fx:id="downLoadMenuItem" mnemonicParsing="false" text="下载" />
                         <MenuItem fx:id="renameMenuItem" mnemonicParsing="false" text="重命名" />
                   <MenuItem fx:id="removeMenuItem" mnemonicParsing="false" text="删除" />

@@ -1,13 +1,17 @@
 package com.kvrmnks;
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.io.DataInputStream;
@@ -51,6 +55,9 @@ public class MainController implements Initializable {
                     public void handle(MouseEvent event) {
                         if (event.getButton() == MouseButton.SECONDARY) {
                             contextMenu.show(fileTableView, event.getScreenX(), event.getScreenY());
+                            TableRow<ViewMyFile> r = (TableRow<ViewMyFile>)event.getSource();
+                            ViewMyFile vmf = r.getItem();
+                            System.out.println(vmf);
                         }
                     }
                 });
@@ -73,5 +80,11 @@ public class MainController implements Initializable {
 
     void setClient(Socket s, DataInputStream dis, DataOutputStream dos) {
         client = new Client(dis, dos, s);
+    }
+
+    public void open(ActionEvent actionEvent) {
+        Stage s = new Stage();
+        s.initModality(Modality.APPLICATION_MODAL);
+        s.show();
     }
 }
